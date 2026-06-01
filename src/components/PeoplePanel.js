@@ -22,7 +22,7 @@ export default function PeoplePanel({ people, selectedPersonId, onSelectPerson, 
   return (
     <aside className={styles.panel}>
       <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>Add Volunteer</h2>
+        <h2 className={styles.sectionTitle}>Pridať osobu</h2>
         <form onSubmit={handleAdd} className={styles.addForm}>
           <input
             className={styles.input}
@@ -65,7 +65,7 @@ export default function PeoplePanel({ people, selectedPersonId, onSelectPerson, 
                   <button
                     className={styles.removeBtn}
                     onClick={e => { e.stopPropagation(); onRemovePerson(person.id); }}
-                    title="Remove volunteer"
+                    title="Vymazať meno"
                     aria-label={`Remove ${person.name}`}
                   >
                     ×
@@ -80,7 +80,7 @@ export default function PeoplePanel({ people, selectedPersonId, onSelectPerson, 
       {people.length === 0 && (
         <div className={styles.empty}>
           <span className={styles.emptyIcon}>👥</span>
-          <p>No volunteers yet.<br />Add someone above to get started.</p>
+          <p>Zatiaľ tu nikoho nemáme.<br />Pridajte niekoho.</p>
         </div>
       )}
     </aside>

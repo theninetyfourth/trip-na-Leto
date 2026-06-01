@@ -7,9 +7,9 @@ export default function Header() {
       <div className={styles.inner}>
         <div className={styles.logo}>
           <span className={styles.logoIcon}>◈</span>
-          <h1 className={styles.title}>Volunteer Scheduler</h1>
+          <h1 className={styles.title}>Chorvátsko Trip</h1>
         </div>
-        <p className={styles.subtitle}>Track team availability at a glance</p>
+        <p className={styles.subtitle}>Obsadené dni</p>
       </div>
     </header>
   );
